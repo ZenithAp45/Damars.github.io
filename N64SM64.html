@@ -27,22 +27,18 @@
         div.Text2{font-family: 'JetBrains Mono', monospace; color:rgb(211, 216, 217); text-align: center;}
         /*Hyperlink text CSS*/
         a.Text{color:rgb(153, 167, 172);}
-        /*grid*/
-        div.grid{display: grid; grid-template-columns: 25% 25% 25% 25% ; gap: 5px 5px;}
     </style>
 
     <body style="background-color: rgb(45, 40, 50);">
         
             <!--Damar's games div (top Left)-->
-            <div class="top"; style="max-width:25%; min-width:24.5%;width: 25%; float: left; padding-top:5px; padding-bottom: 5px;" >
-                <div class="Text1" style="font-size: 35px; text-shadow: 1px -0.75px 0px rgb(76, 134, 137); "> Damar's Games</div>
+            <div class="top"; style="width: 100%; float: left; padding-top:5px; padding-bottom: 5px; padding-left: 1%;" >
+                <a href="Index.html"; class="Text";>
+                    <div class="GBB" style="padding: 5px;">
+                        <div class="Text1" style="font-size: 35px; text-shadow: 1px -0.75px 0px rgb(76, 134, 137);"> Home</div>
+                    </div>
+                </a>
             </div>
-
-            <!--Welcome text div (top Right)-->
-            <div class="top" style="max-width:75%; min-width:74.5%;width: 75%; float: right; padding-top:5px; padding-bottom: 5px;" >
-            <div class="Text1" style="font-size: 35px; text-shadow: 1px -0.75px 0px rgb(76, 134, 137);">Hello, Welcome to my games site.</div>
-            </div>
-
             <!--Div that ends the text bar that's on the top -->
             <div style="clear: both; background-color: rgb(255, 255, 255);"></div>
 
@@ -110,45 +106,32 @@
 
             </div>
 
-            <!-- Half of page that has new additions-->
+            <!-- Half of page that has Game-->
             <div class="top"; style="float: right; max-width: 68.5%; min-width:68.75%; border-radius: 5px; padding:0.5% ;">
                 <div class="GBB" style="width: 100%;">
-                    <div class="Text2"; style="font-size:30px;">Newest Website Uploads</div>  
+                    <div class="Text2"; style="font-size:30px;">Super Mario 64</div>  
                 </div>
                 <hr class="divider">
-                <!--Grid for new games-->
-                <div class="grid">
                     <!--game with Icon-->
                     <div class="GBS">
                         <div class="Text2">
                             <div style="padding: 10px;height: 100%;" >
-                                <div style="width: 100%; background-color: black; margin-bottom:10px;">
-                                <!--Link to game-->
-                                <a href=""><img src="Images/FFIX_art.png" style=" width:100%;object-fit: contain;"></img></a>
-                                </div>
-                                <!--Link to game-->
-                                <a href="" class="Text">Final Fantasy IX</a>
-                                <hr class="divider" style="width: 75%;">
-                                <div class="Text2">Playsation 1</div>
+                                <div id = "#emu" ;style="width: 100%; background-color: black; margin-bottom:10px;">
+                                    <script>
+                                        var NepPlayer = "#emu";     // ID of html element where the emulator will be inserted
+                                        var NepEmu = "psx";         // Platform select
+                                        var NepZoom = "enable";     // Add extra button on toolbar to scale up emulator. Disabled by default
+                                        var NepMaxWidth = "1100px"; // Maximum width size of emulator. 870px by default
+                                        var NepAutoStart = true;    // Auto load emulator when the page starts. Disabled by default
+                                        var NepLang = "en";         // Interface language of the emulator. EN by default
+                                        var gameUrl = "https://drive.google.com/uc?id=1QS1iSN8ZwXMR9Ovz2EcZERbLa8qJYvCD&export=download&confirm=t&uuid=107b7e61-d4af-4142-9cdc-b7cd6dcf92ac&at=ALgDtsxrdAwty4B3UbqYF6XF2dN-:1676182987125"; // Game Url
+                                    </script>
+
+                                    <script src="https://mem.neptunjs.com/njs/njsLoader.js" type="text/javascript"> //NeptunJS lib</script>
+                                </div> 
                             </div>
                         </div>
-                    </div>
-                    <!--game with Icon-->
-                    <div class="GBS">
-                        <div class="Text2">
-                            <div style="padding: 10px;height: 100%;" >
-                                <div style="width: 100%; background-color: black; margin-bottom:10px;">
-                                <!--Link to game-->
-                                <a href="N64SM64.html"><img src="Images/SM64_art.png" style=" width:100%;object-fit: contain;"></img></a>
-                                </div>
-                                <!--Link to game-->
-                                <a href="N64SM64.html" class="Text">Super Mario 64</a>
-                                <hr class="divider" style="width: 75%;">
-                                <div class="Text2">Nintendo 64</div>
-                            </div>
-                        </div>
-                    </div>                                                  
-                </div>
+                    </div>                                               
             </div>
     </body>
     
