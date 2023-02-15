@@ -27,13 +27,15 @@
         div.Text2{font-family: 'JetBrains Mono', monospace; color:rgb(211, 216, 217); text-align: center;}
         /*Hyperlink text CSS*/
         a.Text{color:rgb(153, 167, 172);}
+        /*grid for alignment*/
+        div.grid{display: grid; grid-template-columns: 100%;}
     </style>
 
     <body style="background-color: rgb(45, 40, 50);">
         
             <!--Damar's games div (top Left)-->
             <div class="top"; style="width: 100%; float: left; padding-top:5px; padding-bottom: 5px; padding-left: 1%;" >
-                <a href="https://zenithap45.github.io/Damars.github.io/index.html"; class="Text";>
+                <a href="index.html"; class="Text";>
                     <div class="GBB" style="padding: 5px;">
                         <div class="Text1" style="font-size: 35px; text-shadow: 1px -0.75px 0px rgb(76, 134, 137);"> Home</div>
                     </div>
@@ -113,20 +115,23 @@
                 </div>
                 <hr class="divider">
                     <!--Game-->
-                    <div class="GBB" style="width: 97%; max-width:97%; border-radius: 5px;margin-top: 5px;margin-bottom: 5px; padding: 5px; display: inline-block; object-fit: contain; ">
-                        <script>
-                            var NepPlayer = "#emu";     // ID of html element where the emulator will be inserted
-                            var NepEmu = "n64";         // Platform select
-                            var NepZoom = "enable";     // Add extra button on toolbar to scale up emulator. Disabled by default
-                            var NepMaxWidth = "1100px"; // Maximum width size of emulator. 870px by default
-                            var NepAutoStart = true;    // Auto load emulator when the page starts. Disabled by default
-                            var NepLang = "en";         // Interface language of the emulator. EN by default
-                            var gameUrl = "GameFiles/n64sm64.zip"; // Game Url
-                        </script>
-                        <script src="https://mem.neptunjs.com/njs/njsLoader.js" type="text/javascript"> //NeptunJS lib</script>
-                        <!--Div that contains game-->
-                        <div id="emu"></div>
-                    </div>                                               
+                    <div class="grid">
+                        <div class="GBB" style="width: 97%; max-width:97%; border-radius: 5px;margin-bottom: 5px; padding: 5px; place-self: center;">
+                            <script>
+                                var NepPlayer = "#emu";     // ID of html element where the emulator will be inserted
+                                var NepEmu = "n64";         // Platform select
+                                var NepZoom = "enable";     // Add extra button on toolbar to scale up emulator. Disabled by default
+                                var NepMaxWidth = "1100px"; // Maximum width size of emulator. 870px by default
+                                var NepAutoStart = true;    // Auto load emulator when the page starts. Disabled by default
+                                var NepLang = "en";         // Interface language of the emulator. EN by default
+                                var gameUrl = "GameFiles/n64sm64.zip"; // Game Url
+                            </script>
+                            <script src="https://mem.neptunjs.com/njs/njsLoader.js" type="text/javascript"> //NeptunJS lib</script>
+                            <!--Div that contains game-->
+                            <div id="emu"></div>
+                        </div>
+                    </div>
+                                               
             </div>
     </body>
     
