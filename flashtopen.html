@@ -1,60 +1,132 @@
 <!DOCTYPE html>
-<html>
-	<head><script src="RufflePlayer/ruffle.js"></script></head>
-		<title>Flash Tron </title>
-	<link href="https://fonts.googleapis.com/css?family=Lora|Nunito|Bangers" rel="stylesheet">  
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains">
+<html lang="EN">
+    <head>
+		<!--Loads ruffle player into page-->
+		<script src="RufflePlayer/ruffle.js"></script>
+        <!--Gets google font api to get JetBrains Mono-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
+        <!--Sets page name to classes as to disguise as google classroom-->
+        <title>Classes</title>
+        <!--disguises favicon as google classroom icon theoretically can be swapped with any other school related favicon-->
+        <link type="image/x-icon" rel="shortcut icon" href="https://ssl.gstatic.com/classroom/favicon.png">
+    </head>
+
+    <style>
+        /*Divider line*/
+        hr.divider{color:gray ;border-color:gray; border: width 0px; height: 0px; margin-top: 10px; margin-bottom: 10px;}
+        /*Top of the page CSS */
+        div.top{background-color: rgb(31, 31, 31);opacity:90%;padding: auto;}
+        /*LeftSide grey boxes big CSS*/
+        div.GBB{background-color: rgb(62, 62, 62);opacity:90%;padding: auto;display: inline-block; }
+        /*LeftSide grey boxes small CSS*/
+        div.GBS{background-color: rgb(62, 62, 62);opacity:90%;padding: auto;display: inline-block;width: 75%; border-radius: 5px;margin-top: 5px;margin-bottom: 5px;}
+        /*Light blueish-gray text CSS*/
+        div.Text1{color:rgb(187, 225, 228); text-align:center; font-family: 'JetBrains Mono', monospace;}
+        /*Light gray text CSS*/
+        div.Text2{font-family: 'JetBrains Mono', monospace; color:rgb(211, 216, 217); text-align: center;}
+        /*Hyperlink text CSS*/
+        a.Text{color:rgb(153, 167, 172);}
+        /*grid for alignment*/
+        div.grid{display: grid; grid-template-columns: 100%;}
+    </style>
+
+    <body style="background-color: rgb(45, 40, 50);">
         
-        
-        <style> 
-                div.one{border-style: solid; border-radius: 5px;padding: 40px; background-color: rgba(255, 255, 255, 0.85);}
-                p.two{align: center; border-style: solid; border-radius: 5px; background-color: rgba(145, 145, 145, 0.8); border-color: black;padding: 5px;}
-                p.four{align: center; background-color: rgba(145, 145, 145, 0.8);padding: 5px;}
-                p.three{align: center; border-style: solid; border-radius: 5px; background-color: rgba(145, 145, 145, 0.8); border-color: white;padding: 5px;}
-        </style> 
-        
-        <style> 
-                div { background-repeat: no-repeat; background-attachment: fixed; background-size: cover; } 
-        </style>
-        
-        
-			<!--Background1-->
-			<body style ="background-color:black"
-			
-			<!--Version-->
-			<p style = "color:white; font-family: 'Lora'" ; class="three";>  version 0.3</p>
-			<!--Background2-->
-                     
-                        <div style ="background-image: url('wood2.png')"; align = "center"; >
-			
-			
-			<!--welcome-->
-                         <br>
-			<p class = "four"; style = "color: black ; font-size: 100px; font-family: 'Bangers', serif">Flash Tron</p>
-				<table>
-							<tr>
-									<td>
-											<!--menu title-->
-											<div style = ; align = "center" class = "one">
-												<h1 style = "font-family: 'Bangers', serif" >Main Page</h1>
-												<p class = "two"><a href="index.html" ; style = "font-family: 'Nunito', serif; font-size : 20px; paddng: 5px; color: black;">Main page</a></p>
-												<h1 style = "font-family: 'Bangers', serif;" >Other games</h1>
-                                                                                                <p class="two"; align = "center";><a style = "font-family: 'Nunito', serif ; color: lightblue ;font-size: 20px;" href="tanktopen.html" ; style ="font-family: 'Lora', serif ; font-size:20px" >Tank Trouble</a></p>
-												<!--<p class="two"; align = "center";><a style = "font-family: 'Nunito', serif ; color: lightblue ;font-size: 20px;" href="flashtopen.html" ; style ="font-family: 'Lora', serif ; font-size:20px" >Flash Tron</a></p>-->
-												<p class="two"; align = "center";><a style = "font-family: 'Nunito', serif ; color: lightblue ;font-size: 20px;" href="theboiopen.html" ; style ="font-family: 'Lora', serif ; font-size:20px" >The Binding of Isaac</a></p>
-												<p class="two"; align = "center";><a style = "font-family: 'Nunito', serif ; color: lightblue ;font-size: 20px;" href="Supersfopen.html" ; style ="font-family: 'Lora', serif ; font-size:20px" >Super Smash Flash</a></p>
-												<p class="two"; align = "center";><a style = "font-family: 'Nunito', serif ; color: lightblue ;font-size: 20px;" href="Superm63open.html" ; style ="font-family: 'Lora', serif ; font-size:20px" >Super Mario 63</a></p>
-												<p class="two"; align = "center";><a style = "font-family: 'Nunito', serif ; color: lightblue ;font-size: 20px;" href="sportshbopen.html" ; style ="font-family: 'Lora', serif ; font-size:20px" >Sports head basketball</a></p>
-											<hr width="3" size = 300% ; align = "right">
-                                                                                        </div>
-                                                                        </td>
-                                                                        <td>
-									<!--Game embed-->
-										<div align = "center">
-										<embed src="GameFiles/flasht.swf" width="1000" height="625"> </embed>
-                                                                                </div>
-									</td>
-							</tr>
-				</table>
-			</div>
-	</body>
+            <!--Damar's games div (top Left)-->
+            <div class="top"; style="width: 100%; float: left; padding-top:5px; padding-bottom: 5px; padding-left: 1%;" >
+                <a href="index.html"; class="Text";>
+                    <div class="GBB" style="padding: 5px;">
+                        <div class="Text1" style="font-size: 35px; text-shadow: 1px -0.75px 0px rgb(76, 134, 137);"> Home</div>
+                    </div>
+                </a>
+            </div>
+            <!--Div that ends the text bar that's on the top -->
+            <div style="clear: both; background-color: rgb(255, 255, 255);"></div>
+
+            <!--line to split -->
+            <hr style="color:rgb(106, 99, 112);background-color: rgb(106, 99, 112);border-width:0;">
+
+            <!--Half of page that has the main types of games-->
+            <div class="top"; style="float: left; max-width: 28.5%; min-width: 28.75%; border-radius: 5px; padding:0.5%; text-align: center;">
+                <div class="GBB" style="width: 100%;">
+                    <div class="Text2"; style="font-size: 30px;">Flash Games</div>
+                </div>
+                <hr class="divider">
+                <div class="GBS">
+                    <div class="Text2"; style="font-size: 20px;"><a href="" class="Text">Flash Tron</a></div>
+                </div>
+                <div class="GBS">
+                    <div class="Text2"; style="font-size: 20px;"><a href="" class="Text">Tank Trouble</a></div>
+                </div>
+                <div class="GBS">
+                    <div class="Text2"; style="font-size: 20px;"><a href="" class="Text">The Binding of Isacc</a></div>
+                </div>
+                <div class="GBS">
+                    <div class="Text2"; style="font-size: 20px;"><a href="" class="Text">Super Smash Flash</a></div>
+                </div>
+                <div class="GBS">
+                    <div class="Text2"; style="font-size: 20px;"><a href="" class="Text">Sports Heads Basketball</a></div>
+                </div>
+                <div class="GBS">
+                    <div class="Text2"; style="font-size: 20px;"><a href="" class="Text">Super Mario 63</a></div>
+                </div>
+                <hr class="divider">
+                <div class="GBB" style="width: 100%;">
+                    <div class="Text2"; style="font-size: 30px;">Emulator Categories</div>
+                </div>
+                <hr class="divider">
+                <div class="GBS">
+                    <div class="Text2"; style="font-size: 20px;"><a href="" class="Text">Nintendo Entertainment System (NES)</a></div>
+                </div>
+                <div class="GBS">
+                    <div class="Text2"; style="font-size: 20px;"><a href="" class="Text">Super Nintendo Entertainment System (SNES)</a></div>
+                </div>
+                <div class="GBS">
+                    <div class="Text2"; style="font-size: 20px;"><a href="" class="Text">GameBoy</a></div>
+                </div>
+                <div class="GBS">
+                    <div class="Text2"; style="font-size: 20px;"><a href="" class="Text">GameBoy Color</a></div>
+                </div>
+                <div class="GBS">
+                    <div class="Text2"; style="font-size: 20px;"><a href="" class="Text">GameBoy Advanced (GBA)</a></div>
+                </div>
+                <div class="GBS">
+                    <div class="Text2"; style="font-size: 20px;"><a href="" class="Text">Nintendo 64</a></div>
+                </div>
+                <div class="GBS">
+                    <div class="Text2"; style="font-size: 20px;"><a href="" class="Text">Nintendo DS</a></div>
+                </div>
+                <div class="GBS">
+                    <div class="Text2"; style="font-size: 20px;"><a href="" class="Text">PlayStation 1</a></div>
+                </div>
+                <hr class="divider">
+                <div class="GBB" style="width: 100%;">
+                    <div class="Text2"; style="font-size: 30px;">HTML5 Games</div>
+                </div>
+                <hr class="divider">
+
+            </div>
+
+            <!-- Half of page that has Game-->
+            <div class="top"; style="float: right; max-width: 68.5%; min-width:68.75%; border-radius: 5px; padding:0.5% ;">
+                <div class="GBB" style="width: 100%;">
+                    <div class="Text2"; style="font-size:30px;">Flash Tron</div>  
+                </div>
+                <hr class="divider">
+                    <!--Game-->
+                    <div class="grid">
+                        <div class="GBB" style="width: 97%; max-width:97%; border-radius: 5px;margin-bottom: 5px; padding: 5px; place-self: center;">
+                            <!--Div that contains game-->
+                            <div align = "center">
+								<embed src="GameFiles/flasht.swf" width="1000" height="625"> </embed>
+							</div>
+                        </div>
+                    </div>
+                                               
+            </div>
+    </body>
+    
 </html>
