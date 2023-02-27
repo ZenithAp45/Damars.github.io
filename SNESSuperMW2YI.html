@@ -2,8 +2,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains">
 <html lang="EN">
     <head>
-		<!--Loads ruffle player into page-->
-		<script src="RufflePlayer/ruffle.js"></script>
         <!--Gets google font api to get JetBrains Mono-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,7 +53,7 @@
                     <div class="Text2"; style="font-size: 30px;">Flash Games</div>
                 </div>
 
-
+                
                 <hr class="divider">
 
 
@@ -80,7 +78,7 @@
                 <div class="GBS">
                     <div class="Text2"; style="font-size: 20px;"><a href="MineB.html" class="Text">Mine Blocks</a></div>
                 </div>
-                
+
 
                 <hr class="divider">
 
@@ -130,17 +128,24 @@
             <!-- Half of page that has Game-->
             <div class="top"; style="float: right; max-width: 68.5%; min-width:68.75%; border-radius: 5px; padding:0.5% ;">
                 <div class="GBB" style="width: 100%;">
-                    <!--Game Name-->
-                    <div class="Text2"; style="font-size:30px;">Mine BLocks</div>  
+                    <div class="Text2"; style="font-size:30px;">Super Mario World 2 : Yoshi's Island</div>  
                 </div>
                 <hr class="divider">
                     <!--Game-->
                     <div class="grid">
                         <div class="GBB" style="width: 97%; max-width:97%; border-radius: 5px;margin-bottom: 5px; padding: 5px; place-self: center;">
+                            <script>
+                                var NepPlayer = "#emu";     // ID of html element where the emulator will be inserted
+                                var NepEmu = "snes";         // Platform select
+                                var NepZoom = "enable";     // Add extra button on toolbar to scale up emulator. Disabled by default
+                                var NepMaxWidth = "1100px"; // Maximum width size of emulator. 870px by default
+                                var NepAutoStart = true;    // Auto load emulator when the page starts. Disabled by default
+                                var NepLang = "en";         // Interface language of the emulator. EN by default
+                                var gameUrl = "GameFiles/SNES_SuperMW2YI.zip"; // Game Url
+                            </script>
+                            <script src="https://mem.neptunjs.com/njs/njsLoader.js" type="text/javascript"> //NeptunJS lib</script>
                             <!--Div that contains game-->
-                            <div align = "center">
-								<iframe src="https://mineblocks.com/1/embed" style="width:100%;height:100%"></iframe>
-							</div>
+                            <div id="emu"></div>
                         </div>
                     </div>
                                                
